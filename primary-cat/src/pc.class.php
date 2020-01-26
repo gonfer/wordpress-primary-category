@@ -61,28 +61,6 @@
         }
     
         /**
-         * Post Meta Box
-         * @param $post_type
-         */
-        public function add_meta_box( $post_type )
-        {
-            // Limit meta box to certain post types.
-            $post_types = array( 'post', 'page' );
-        
-            if ( in_array( $post_type, $post_types ) )
-            {
-                add_meta_box(
-                    'some_meta_box_name',
-                    __( 'Some Meta Box Headline', 'primary-cat' ),
-                    array( $this, 'render_meta_box_content' ),
-                    $post_type,
-                    'advanced',
-                    'high'
-                );
-            }
-        }
-    
-        /**
          * Metabox Callback
          *
          * @param $post_type
@@ -101,11 +79,11 @@
             if ( in_array( $post_type, $post_types ) )
             {
                 add_meta_box(
-                    'some_meta_box_name',
+                    'pc_meta_box_name',
                     __( 'Primary Category', 'primary-cat' ),
                     array( $this, 'pc_custom_box_html' ),
                     $post_type,
-                    'advanced',
+                    'side',
                     'high'
                 );
             }
