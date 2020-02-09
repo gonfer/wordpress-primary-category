@@ -1,0 +1,27 @@
+{
+  "name": "primary-cat",
+  "version": "1.0.0",
+  "description": "Allows publishers to designate a primary category for posts.",
+  "main": "index.js",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gonfer/wordpress-primary-category.git"
+  },
+  "keywords": [
+    "wordpress",
+    "plugin"
+  ],
+  "author": "Gonzalo Federico Fernandez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gonfer/wordpress-primary-category/issues"
+  },
+  "homepage": "https://github.com/gonfer/wordpress-primary-category#readme",
+  "devDependencies": {
+    "@wordpress/scripts": "^7.0.1"
+  }
+}

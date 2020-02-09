@@ -24,3 +24,5 @@ node_modules/
 
 # ides
 .idea
+
+node_modules/
